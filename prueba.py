@@ -1,12 +1,13 @@
-def my_function():
-  txt = "welcome to the jungle"
-  x = txt.split()
-  print(x)
+import os
+import sys
 
-my_function()
+# función sin parámetros o retorno de valores
 
+def leerArchivo(): 
+  f = open(sys.argv[1])
+  mensaje = f.read()
+  print(mensaje) 
+  f.close()
+ 
 
-
-
-
-
+leerArchivo()
